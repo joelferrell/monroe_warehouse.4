@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :parts
+
   resources :work_orders
 
   resources :mileagelogs
