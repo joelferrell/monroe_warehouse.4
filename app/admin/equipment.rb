@@ -1,4 +1,5 @@
 ActiveAdmin.register Equipment do
+  permit_params :equip_id, :model, :purchase_date, :description
 
 
   # See permitted parameters documentation:
