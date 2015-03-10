@@ -38,3 +38,33 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bundler'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'dotenv-rails'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
+
+gem 'rails_config'
+gem 'simple_form'
+gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
+gem 'bootstrap-sass-extras'
+gem 'devise', github: 'plataformatec/devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'binding_of_caller'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'tzinfo-data'
+gem 'validates_formatting_of'
+
+group :development do
+  gem 'better_errors'
+  gem 'pry-rails'
+end
